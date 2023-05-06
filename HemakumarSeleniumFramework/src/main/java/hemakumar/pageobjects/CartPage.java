@@ -9,7 +9,7 @@ import org.openqa.selenium.support.PageFactory;
 
 import hemakumar.AbstractComponents.AbstractComponent;
 
-
+//cart page
 public class CartPage extends AbstractComponent {
 	WebDriver driver;
 
