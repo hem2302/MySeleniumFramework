@@ -14,7 +14,7 @@ import hemakumar.pageobjects.CartPage;
 import hemakumar.pageobjects.OrderPage;
 
 public class AbstractComponent {
-	
+	//Abstract component
 	WebDriver driver;
 
 	public AbstractComponent(WebDriver driver) {
