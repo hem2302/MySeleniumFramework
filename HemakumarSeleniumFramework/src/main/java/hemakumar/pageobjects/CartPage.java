@@ -11,6 +11,7 @@ import hemakumar.AbstractComponents.AbstractComponent;
 
 //cart page
 //Cart page check
+//cart page
 public class CartPage extends AbstractComponent {
 	WebDriver driver;
 
