@@ -1,21 +1,16 @@
 package hemakumar.tests;
 
-import org.testng.annotations.Test;
-
-import hemakumar.TestComponents.BaseTest;
-import hemakumar.TestComponents.Retry;
-import hemakumar.pageobjects.CartPage;
-import hemakumar.pageobjects.CheckoutPage;
-import hemakumar.pageobjects.ConfirmationPage;
-import hemakumar.pageobjects.ProductCatalogue;
-
-import org.testng.AssertJUnit;
 import java.io.IOException;
 import java.util.List;
 
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.Test;
+
+import hemakumar.TestComponents.BaseTest;
+import hemakumar.TestComponents.Retry;
+import hemakumar.pageobjects.CartPage;
+import hemakumar.pageobjects.ProductCatalogue;
 
 public class ErrorValidationsTest extends BaseTest {
 

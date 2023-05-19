@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>1/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Aug 08 13:21:47 EDT 2022</td>
+<td>Started on:</td><td>Thu May 18 00:41:03 BST 2023</td>
 </tr>
-<tr><td>Total time:</td><td>19 seconds (19832 ms)</td>
+<tr><td>Total time:</td><td>9 seconds (9530 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,18 +67,66 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
 <td width="30%"><b>Exception</b></td>
 <td width="10%"><b>Time (seconds)</b></td>
 <td><b>Instance</b></td>
 </tr>
 <tr>
 <td title='cucumber.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: cucumber.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Positive Test of Submitting the order", "Purchase the order from Ecommerce Website"</td>
-<td></td>
-<td>18</td>
-<td>cucumber.TestNGTestRunner@c33b74f</td></tr>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: Unable to find element with locator By.cssSelector: b
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.9.0&apos;, revision: &apos;d7057100a6&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.17&apos;
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebElement.findElement(RemoteWebElement.java:227)
+	at hemakumar.pageobjects.ProductCatalogue.lambda$0(ProductCatalogue.java:43)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:176)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.tryAdvance(ArrayList.java:1632)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:127)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:502)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:488)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:543)
+	at hemakumar.pageobjects.ProductCatalogue.getProductByName(ProductCatalogue.java:43)
+	at hemakumar.pageobjects.ProductCatalogue.addProductToCart(ProductCatalogue.java:50)
+	at hemakumar.stepDefinitions.StepDefinitionImpl.i_add_product_to_cart(StepDefinitionImpl.java:43)
+	at ✽.I add product ZARA COAT 3 to Cart(file:///C:/Users/hemak/git/MySeleniumFramework/MySeleniumFramework/HemakumarSeleniumFramework/src/test/java/cucumber/SubmitOrder.feature:13)
+</pre></div><a href='#' onClick='toggleBox("stack-trace636575568", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace636575568'><pre>org.openqa.selenium.NoSuchElementException: Unable to find element with locator By.cssSelector: b
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.9.0&apos;, revision: &apos;d7057100a6&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.17&apos;
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebElement.findElement(RemoteWebElement.java:227)
+	at hemakumar.pageobjects.ProductCatalogue.lambda$0(ProductCatalogue.java:43)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:176)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.tryAdvance(ArrayList.java:1632)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:127)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:502)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:488)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:543)
+	at hemakumar.pageobjects.ProductCatalogue.getProductByName(ProductCatalogue.java:43)
+	at hemakumar.pageobjects.ProductCatalogue.addProductToCart(ProductCatalogue.java:50)
+	at hemakumar.stepDefinitions.StepDefinitionImpl.i_add_product_to_cart(StepDefinitionImpl.java:43)
+	at ✽.I add product ZARA COAT 3 to Cart(file:///C:/Users/hemak/git/MySeleniumFramework/MySeleniumFramework/HemakumarSeleniumFramework/src/test/java/cucumber/SubmitOrder.feature:13)
+</pre></div></td>
+<td>8</td>
+<td>cucumber.TestNGTestRunner@5b799640</td></tr>
 </table><p>
 </body>
 </html>
